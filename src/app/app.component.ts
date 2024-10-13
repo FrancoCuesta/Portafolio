@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { MainComponent } from "./components/main/main.component";
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { NanvComponent } from "./components/nanv/nanv.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MainComponent, NanvComponent],
+  imports: [CommonModule, RouterOutlet, RouterLink , NanvComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

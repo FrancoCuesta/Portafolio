@@ -3,12 +3,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet, RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-proyects',
+  selector: 'app-page-not-found',
   standalone: true,
   imports: [CommonModule, RouterOutlet, RouterLink],
-  templateUrl: './proyects.component.html',
-  styleUrl: './proyects.component.scss'
+  templateUrl: './page-not-found.component.html',
+  styleUrl: './page-not-found.component.scss'
 })
-export class ProyectsComponent {
+export class PageNotFoundComponent {
 
 }
