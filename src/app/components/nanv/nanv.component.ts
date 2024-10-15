@@ -10,5 +10,4 @@ import { RouterOutlet, RouterLink } from '@angular/router';
   styleUrl: './nanv.component.scss'
 })
 export class NanvComponent {
-
 }
