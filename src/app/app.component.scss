@@ -1,3 +1,26 @@
+body {
+  --text-color: #222;
+  --background-color: #fff;
+}
+
+body.dark-theme {
+  --text-color: #fff;
+  --background-color: #222;
+}
+
+body {
+  --text-color: #fff;
+  --background-color: #222;
+  //background: var(--background-color);
+}
+
+h1,
+p {
+  color: var(--text-color);
+}
+
+
+
 :host {
     /* Definición de variables */
     --bright-blue: rgb(0, 109, 255);
