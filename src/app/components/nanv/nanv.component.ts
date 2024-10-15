@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet, RouterLink } from '@angular/router';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-nanv',
@@ -11,12 +10,5 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   styleUrl: './nanv.component.scss'
 })
 export class NanvComponent {
-  title = 'done';
-  fileUrl: SafeResourceUrl | undefined;
-  constructor(private sanitizer: DomSanitizer) {  }
-  ngOnInit() {
-    const data = 'some text';
-    const blob = new Blob([data], { type: 'application/octet-stream' });
-    this.fileUrl = this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(blob));
-  }
+
 }
